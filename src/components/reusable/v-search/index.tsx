@@ -3,7 +3,7 @@ import { LoaderIcon } from 'lucide-react';
 
 const VSearch = ({ handleSearch, loading }: { handleSearch: (text: string) => void; loading: boolean }) => {
 	return (
-		<div className='relative w-1/3'>
+		<div className='relative md:w-1/3 w-full'>
 			<Input type='text' placeholder='Search bike descriptions' className='w-full' onChange={(event) => handleSearch(event.target.value)} />
 
 			{loading && (
