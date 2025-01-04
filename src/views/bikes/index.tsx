@@ -90,17 +90,6 @@ const Bikes = () => {
 			<VSearch handleSearch={handleSearch} loading={isLoading || countsIsLoading} />
 			<VBikes bikes={data?.data?.bikes} formatDate={formatDate} loading={isLoading || countsIsLoading} />
 
-			{/* <div className='bg-blue-400 '>
-				{data?.data?.bikes?.length > 0 && numberOfPages! >= 10 && (
-					<VPagination
-						handleShowPages={handleShowPages}
-						startIndex={startIndex}
-						page={page}
-						count={numberOfPages!}
-						loading={isLoading || countsIsLoading}
-					/>
-				)}
-			</div> */}
 			<div className='sm:overflow-hidden overflow-auto'>
 				{data?.data?.bikes?.length > 0 && numberOfPages! >= 10 && (
 					<VPagination
