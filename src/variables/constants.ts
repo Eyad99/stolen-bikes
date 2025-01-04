@@ -1,0 +1,1 @@
+export const DEFULT_ITEMS_PER_PAGE = 10;
